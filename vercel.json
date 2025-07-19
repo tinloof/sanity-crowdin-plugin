@@ -1,0 +1,26 @@
+{
+  "github": { "silent": true },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOW-FROM *.crowdin.com *.crowdin.net"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self' *.crowdin.net *.crowdin.com;"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=15552000; includeSubdomains"
+        }
+      ]
+    }
+  ]
+}
